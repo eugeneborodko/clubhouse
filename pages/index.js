@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Greeting from './../components/Steps/Greeting'
 
 const Home = () => {
   return (
@@ -6,7 +7,7 @@ const Home = () => {
       <Head>
         <title>Clubhouse: Drop-in audio chat</title>
       </Head>
-      <h1>Home Page</h1>
+      <Greeting />
     </>
   )
 }
