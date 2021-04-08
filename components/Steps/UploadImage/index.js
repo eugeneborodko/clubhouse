@@ -1,8 +1,12 @@
+import { useContext } from 'react'
+import { StepsContext } from './../../../pages'
 import Button from './../../Button'
 
 import styles from './upload-image.module.scss'
 
 const UploadImage = () => {
+  const { onNextStep } = useContext(StepsContext)
+
   return (
     <div className={styles.uploadImage}>
       <h3 className={styles.title}>Okay, James Brown!</h3>
@@ -13,7 +17,7 @@ const UploadImage = () => {
           <input className={styles.input} type="file" id="upload" />
           <p className={styles.uploadText}>Choose a different photo</p>
         </label>
-        <Button>Next</Button>
+        <Button onClick={onNextStep}>Next</Button>
       </form>
     </div>
   )

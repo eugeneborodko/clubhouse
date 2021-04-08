@@ -1,10 +1,10 @@
 import styles from './button.module.scss'
 
-const Button = ({ children }) => {
+const Button = ({ children, onClick }) => {
   return (
-    <a className={styles.button} href="#">
+    <button className={styles.button} onClick={onClick}>
       {children}
-    </a>
+    </button>
   )
 }
 

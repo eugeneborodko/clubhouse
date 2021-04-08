@@ -1,8 +1,12 @@
+import { useContext } from 'react'
+import { StepsContext } from './../../../pages'
 import Button from './../../Button'
 
 import styles from './enter-name.module.scss'
 
 const EnterName = () => {
+  const { onNextStep } = useContext(StepsContext)
+
   return (
     <div className={styles.enterName}>
       <h3 className={styles.title}>What's your name?</h3>
@@ -13,7 +17,7 @@ const EnterName = () => {
           type="text"
           placeholder="Enter full name"
         />
-        <Button>Next</Button>
+        <Button onClick={onNextStep}>Next</Button>
       </form>
     </div>
   )
