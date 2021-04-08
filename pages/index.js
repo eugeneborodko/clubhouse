@@ -1,14 +1,15 @@
 import Head from 'next/head'
 import { useState } from 'react'
-import Container from './../components/Container'
 import Greeting from './../components/Steps/Greeting'
 import EnterName from './../components/Steps/EnterName'
+import TwitterImport from './../components/Steps/TwitterImport'
 import UploadImage from './../components/Steps/UploadImage'
 
 const stepsComponents = {
   0: Greeting,
   1: EnterName,
-  2: UploadImage,
+  2: TwitterImport,
+  3: UploadImage,
 }
 
 const Home = () => {
@@ -20,9 +21,7 @@ const Home = () => {
       <Head>
         <title>Clubhouse: Drop-in audio chat</title>
       </Head>
-      <Container>
-        <Step />
-      </Container>
+      <Step />
     </>
   )
 }
