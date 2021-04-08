@@ -1,6 +1,6 @@
-import { StepsContext } from './../../../pages'
+import { StepsContext } from '../../../pages'
 import { useContext } from 'react'
-import Button from './../../Button'
+import Button from '../../Button'
 
 import styles from './greeting.module.scss'
 

@@ -1,6 +1,6 @@
 import { useContext } from 'react'
-import { StepsContext } from './../../../pages'
-import Button from './../../Button'
+import { StepsContext } from '../../../pages'
+import Button from '../../Button'
 
 import styles from './upload-image.module.scss'
 

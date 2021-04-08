@@ -1,7 +1,7 @@
 import { useContext } from 'react'
-import { StepsContext } from './../../../pages'
+import { StepsContext } from '../../../pages'
 import NumberFormat from 'react-number-format'
-import Button from './../../Button'
+import Button from '../../Button'
 
 import styles from './enter-phone.module.scss'
 

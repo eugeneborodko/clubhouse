@@ -1,5 +1,5 @@
 import Router from 'next/router'
-import Button from './../../Button'
+import Button from '../../Button'
 
 import styles from './enter-code.module.scss'
 
