@@ -1,8 +1,12 @@
+import { useContext } from 'react'
+import { StepsContext } from './../../../pages'
 import Button from './../../Button'
 
 import styles from './enter-code.module.scss'
 
 const EnterCode = () => {
+  const { onNextStep } = useContext(StepsContext)
+
   return (
     <div className={styles.enterCode}>
       <h3 className={styles.title}>Enter your activation code #</h3>
@@ -37,7 +41,7 @@ const EnterCode = () => {
             maxLength={1}
           />
         </div>
-        <Button>Next</Button>
+        <Button onClick={onNextStep}>Next</Button>
       </form>
     </div>
   )
