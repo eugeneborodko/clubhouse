@@ -1,11 +1,13 @@
-import { useContext } from 'react'
-import { StepsContext } from './../../../pages'
+import Router from 'next/router'
 import Button from './../../Button'
 
 import styles from './enter-code.module.scss'
 
 const EnterCode = () => {
-  const { onNextStep } = useContext(StepsContext)
+  const handleClick = (event) => {
+    event.preventDefault()
+    Router.push('/rooms')
+  }
 
   return (
     <div className={styles.enterCode}>
@@ -41,7 +43,7 @@ const EnterCode = () => {
             maxLength={1}
           />
         </div>
-        <Button onClick={onNextStep}>Next</Button>
+        <Button onClick={handleClick}>Next</Button>
       </form>
     </div>
   )
