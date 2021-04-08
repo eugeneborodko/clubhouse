@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import { useState, createContext } from 'react'
 import React from 'react'
-import Greeting from './../components/Steps/Greeting'
-import EnterName from './../components/Steps/EnterName'
-import TwitterImport from './../components/Steps/TwitterImport'
-import UploadImage from './../components/Steps/UploadImage'
-import EnterPhone from './../components/Steps/EnterPhone'
-import EnterCode from './../components/Steps/EnterCode'
+import Greeting from '../components/Steps/Greeting'
+import EnterName from '../components/Steps/EnterName'
+import TwitterImport from '../components/Steps/TwitterImport'
+import UploadImage from '../components/Steps/UploadImage'
+import EnterPhone from '../components/Steps/EnterPhone'
+import EnterCode from '../components/Steps/EnterCode'
 
 const stepsComponents = {
   0: Greeting,
