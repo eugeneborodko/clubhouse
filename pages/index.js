@@ -3,11 +3,13 @@ import { useState } from 'react'
 import Greeting from './../components/Steps/Greeting'
 import EnterName from './../components/Steps/EnterName'
 import TwitterImport from './../components/Steps/TwitterImport'
+import UploadImage from './../components/Steps/UploadImage'
 
 const stepsComponents = {
   0: Greeting,
   1: EnterName,
   2: TwitterImport,
+  3: UploadImage,
 }
 
 const Home = () => {
