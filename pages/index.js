@@ -5,6 +5,7 @@ import EnterName from './../components/Steps/EnterName'
 import TwitterImport from './../components/Steps/TwitterImport'
 import UploadImage from './../components/Steps/UploadImage'
 import EnterPhone from './../components/Steps/EnterPhone'
+import EnterCode from './../components/Steps/EnterCode'
 
 const stepsComponents = {
   0: Greeting,
@@ -12,10 +13,11 @@ const stepsComponents = {
   2: TwitterImport,
   3: UploadImage,
   4: EnterPhone,
+  5: EnterCode,
 }
 
 const Home = () => {
-  const [step, setStep] = useState(4)
+  const [step, setStep] = useState(5)
   const Step = stepsComponents[step]
 
   return (
