@@ -1,11 +1,11 @@
-import { useContext } from 'react'
+import React, { useContext } from 'react'
 import { StepsContext } from '../../../pages'
 import NumberFormat from 'react-number-format'
 import Button from '../../Button'
 
 import styles from './enter-phone.module.scss'
 
-const EnterPhone = () => {
+const EnterPhone: React.FC = () => {
   const { onNextStep } = useContext(StepsContext)
 
   return (

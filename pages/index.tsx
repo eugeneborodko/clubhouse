@@ -17,10 +17,17 @@ const stepsComponents = {
   5: EnterCode,
 }
 
-export const StepsContext = createContext({})
+type StepContextProps = {
+  onNextStep: () => void
+  step: number
+}
 
-const Home = () => {
-  const [step, setStep] = useState(0)
+export const StepsContext = createContext<StepContextProps>(
+  {} as StepContextProps,
+)
+
+const Home: React.FC = () => {
+  const [step, setStep] = useState<number>(0)
   const Step = stepsComponents[step]
 
   const onNextStep = () => {

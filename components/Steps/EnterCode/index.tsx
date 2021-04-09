@@ -1,10 +1,11 @@
 import Router from 'next/router'
+import React from 'react'
 import Button from '../../Button'
 
 import styles from './enter-code.module.scss'
 
-const EnterCode = () => {
-  const handleClick = (event) => {
+const EnterCode: React.FC = () => {
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>): void => {
     event.preventDefault()
     Router.push('/rooms')
   }

@@ -4,7 +4,7 @@ import Button from '../../Button'
 
 import styles from './upload-image.module.scss'
 
-const UploadImage = () => {
+const UploadImage: React.FC = () => {
   const { onNextStep } = useContext(StepsContext)
 
   return (

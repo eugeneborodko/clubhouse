@@ -1,10 +1,10 @@
-import { useContext } from 'react'
+import React, { useContext } from 'react'
 import { StepsContext } from '../../../pages'
 import Button from '../../Button'
 
 import styles from './twitter-import.module.scss'
 
-const TwitterImport = () => {
+const TwitterImport: React.FC = () => {
   const { onNextStep } = useContext(StepsContext)
 
   return (
