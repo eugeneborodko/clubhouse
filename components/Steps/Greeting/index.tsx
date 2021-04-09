@@ -1,10 +1,10 @@
 import { StepsContext } from '../../../pages'
-import { useContext } from 'react'
+import React, { useContext } from 'react'
 import Button from '../../Button'
 
 import styles from './greeting.module.scss'
 
-const Greeting = () => {
+const Greeting: React.FC = () => {
   const { onNextStep } = useContext(StepsContext)
 
   return (
@@ -14,9 +14,7 @@ const Greeting = () => {
         Hey, we're still opening up but anyone can join with an invite from an
         existing user!
       </p>
-      <Button className={styles.button} onClick={onNextStep}>
-        Get your username
-      </Button>
+      <Button onClick={onNextStep}>Get your username</Button>
     </div>
   )
 }

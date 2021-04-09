@@ -1,10 +1,10 @@
-import { useContext } from 'react'
+import React, { useContext } from 'react'
 import { StepsContext } from '../../../pages'
 import Button from '../../Button'
 
 import styles from './enter-name.module.scss'
 
-const EnterName = () => {
+const EnterName: React.FC = () => {
   const { onNextStep } = useContext(StepsContext)
 
   return (
